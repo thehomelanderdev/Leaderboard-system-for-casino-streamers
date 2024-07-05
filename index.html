@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>RAIN Leaderboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Leaderboard</h1>
-        <table id="leaderboard-table">
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>User</th>
-                    <th>Wagered Amount</th>
-                </tr>
-            </thead>
-            <tbody id="leaderboard-body">
-                <!-- Data will be inserted here -->
-            </tbody>
-        </table>
-        <div id="prize-pool">
-            <h2>Prize Pool: 1000 Tokens</h2>
-            <p>1st: 500 Tokens</p>
-            <p>2nd: 300 Tokens</p>
-            <p>3rd: 200 Tokens</p>
+    <div class="particles"></div>
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-4">RAIN Leaderboard</h1>
+        <div id="countdown" class="text-center text-lg mb-4"></div>
+        <div id="leaderboard" class="bg-gray-800 rounded-lg p-4">
+            <div class="flex justify-between p-2 border-b-2 border-gray-600">
+                <span>Rank</span>
+                <span>Player</span>
+                <span>Wagers</span>
+                <span>Reward</span>
+            </div>
+            <!-- Player entries will be appended here -->
+        </div>
+        <div class="text-center text-sm mt-4">
+            <p>Gamble responsibly. If you need help, visit <a href="https://www.begambleaware.org" class="text-blue-400">BeGambleAware.org</a>.</p>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

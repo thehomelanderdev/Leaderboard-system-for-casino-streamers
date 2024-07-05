@@ -1,0 +1,14 @@
+{
+    "players": [
+        { "name": "Player1", "wagers": 526.55, "reward": 500 },
+        { "name": "Player2", "wagers": 638.99, "reward": 250 },
+        { "name": "Player3", "wagers": 330.69, "reward": 150 },
+        { "name": "Player4", "wagers": 244.99, "reward": 75 },
+        { "name": "Player5", "wagers": 238.00, "reward": 50 },
+        { "name": "Player6", "wagers": 139.95, "reward": 25 },
+        { "name": "Player7", "wagers": 137.25, "reward": 10 },
+        { "name": "Player8", "wagers": 113.20, "reward": 5 },
+        { "name": "Player9", "wagers": 106.36, "reward": 2 },
+        { "name": "Player10", "wagers": 105.29, "reward": 1 }
+    ]
+}
